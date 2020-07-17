@@ -1,0 +1,445 @@
+*
+{
+	margin: 0;
+	padding: 10px;
+	
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+	z-index: -1;
+	overflow-x: hidden;
+	overflow-y: scroll;
+    color: #ffffff;
+	background:url(https://images.wallpaperscraft.com/image/board_black_line_texture_background_wood_55220_1920x1080.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+}
+.topnav {
+	background: transparent;
+	text-align: center; 
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0 , 0 , 0 , .5);
+	background: rgba(0 , 0 , 0 , .4);
+	outline: none;
+	border: none;
+}
+.topnav ul {
+   display: inline-flex;
+   list-style: none;
+   color: white; 
+}
+.topnav ul li {
+   width:120px;
+   margin-top: 0px;
+   margin: 15px;
+   text-align: center;
+}
+.topnav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.topnav ul li:first-child, .topnav ul li:hover{
+	cursor: pointer;
+	background-color: #2bab0d;
+	border-radius: 4px;
+}
+.submenu {
+	display: none;
+	border-radius: 6px;
+}
+
+.topnav ul li:hover .submenu {
+	display: block;
+	position: absolute;
+	background: rgb(0 , 100 ,0);
+	margin-top: 10px;
+	margin-left: -15px;
+	z-index: 1;
+}
+.topnav ul li:hover .submenu ul{
+	display: block;
+	margin: 0px;
+}
+.topnav ul li:hover .submenu ul li:nth-child(1) {
+   animation-name: list-slide;
+   animation-duration: 0.33s;
+}
+.topnav ul li:hover .submenu ul li:nth-child(2) {
+   animation-name: list-slide;
+   animation-delay: 0.33s;
+   animation-duration: 0.33s;
+}
+.topnav ul li:hover .submenu ul li:nth-child(3) {
+   animation-name: list-slide;
+   animation-delay: 0.66s;
+   animation-duration: 0.33s;
+}
+.topnav ul li:hover .submenu ul li {
+	width: 150px;
+	margin-bottom: 18px ;
+	padding-bottom: 2px;
+	border-bottom: 1px dotted white;
+	background :transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.submenu ul li:hover {
+	font-family: 'Ranchers', cursive;
+    font-family: 'Rowdies', cursive;
+	font-size: 20px;
+	margin: 5px;
+	cursor: pointer;
+	color: #ffffff;
+}
+.topnav ul li:hover .submenu ul li:last-child {
+	margin-bottom: 0px;
+	border-bottom: none;
+}
+.submenu-2 {
+	display: none;
+	font-size:16px;
+}
+.submenu ul li:hover .submenu-2 {
+    font-size:16px;
+	border-radius: 6px;
+	position: absolute;
+	display: block;
+	margin-top: -10px;
+	margin-left: 140px;
+	background: rgb(0 , 100 , 0);
+}
+
+.box {
+	position: relative;
+	border: none;
+	border-radius: 10px;
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0 , 0 , 0 , 1);
+	background: rgba(0 , 0 , 0 , 0.4);
+	margin: 30px 20px 30px 20px;
+	width: 90%;
+	height: auto;
+}
+.box .school p {
+	letter-spacing: 0px;
+	width: 60%;
+	height: 100%;
+	color: #ffffff;
+	font-size: 25px;
+    font-family: 'Grenze Gotisch', cursive;
+    text-align: justify;
+    padding: 20px;
+}
+.box .college p {
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-family: 'Grenze Gotisch', cursive;
+	font-size: 25px;
+    text-align: justify;
+    padding: 20px;
+}
+.info-box {
+	left: 40px;
+	z-index: 0;
+	margin: 60px 0px 100px 0px;
+	animation-name: fade-in;
+	animation-duration: 2s;
+	animation-delay: 0.1s;
+	position: relative;
+	width: 90%;
+	height: 500px;
+	border: 1px solid black;
+	border-radius: 20px;
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0 , 0 , 0 , 1);
+	background: rgba(0 , 0 , 0 , .4);
+}
+#my-image {
+	border-radius: 20px;
+	display: block;
+	position: absolute;
+	top: 50px;
+	left: 800px;
+	width: 300px;
+	height: 400px;
+}
+#my-image:hover {
+	animation-name: fade-in;
+	animation-delay: 0.2s;
+	animation-duration: 2s;
+}
+.details {
+	position: absolute;
+  top: 70px;
+  left: 100px;
+}
+.details b {
+	color: #ffffff;
+	font-size:20px;
+}
+.details input {
+	background: transparent;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	color: #ffffff;
+	border-radius: 5px;
+	margin:20px;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+#school {
+	border-radius: 10px;
+	display: block;
+	position: absolute;
+	top: 150px;
+	left: 800px;
+	width: 300px;
+	height: 300px;
+}
+
+
+.college-grid  img {
+	margin: 10px;
+	padding: 10px;
+}
+.college-grid img {
+	width: 400px;
+	height: 200px;
+	transition: 0.5s all;
+}
+.college-grid {
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding: 40px 40px 40px 40px;
+	left: 100px;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	flex-wrap: wrap;
+}
+.college-grid img:hover {
+	height: 250px;
+	width: 500px;
+}
+
+
+#contacts {
+	position: relative;
+	left: 50%;
+	color: #ffffff;
+	font-size: 22px;
+    font-family: 'Grenze Gotisch', cursive;
+    text-align: justify;
+    padding: 20px;
+}
+#address {
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+	top: 25px;
+	left: 350px;
+	width: 150px;
+	height: 150px;
+}
+
+.social-media {
+	position: relative;
+	left: 150px;
+	margin: 10px;
+	margin: 10px;
+	display: flex;
+	flex-direction: row;
+	
+}
+.social-media img {
+    stroke: 
+	position: relative;
+    border-radius: 40% 40% 40% 40%;
+    margin: 10px;
+    padding: 30px;
+}
+
+.social-media img:hover {
+	transform: translateY(-20px);
+	transition-duration: 0.1s; 
+	animation-delay: 0.2s;
+	animation-name: rotate;
+	animation-duration: 0.6s;
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.box .early-life p {
+	text-transform: capitalize;
+	font-family: 'Grenze Gotisch', cursive;
+	color: #ffffff;
+	font-size: 25px;
+    text-align: justify;
+    padding: 20px;
+}
+
+
+@keyframes list-slide {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/*.social-box img {
+	display: none; 
+}
+
+.social-box img{
+	z-index: 1;
+	margin: 10px;
+	 position: relative;
+	 left: 350px;
+	 width: 280px;
+	 height: 380px;
+	 border-radius: 20px; 
+
+}*/
+.intro {
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 0px;
+  align-content: center;
+ 
+}
+.intro p {
+	letter-spacing: 1px;
+	text-align: center;
+	font-family: 'Ranchers', cursive;
+}
+.future a {
+	text-decoration: none;
+}
+.future p {
+	font-size: 25px;
+    font-family: 'Grenze Gotisch', cursive;
+}
+#schoolinfo h1 , #collegeinfo h1 , #future-aim h1 {
+	letter-spacing: 1px;
+	font-size: 44px;
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    font-style: normal;
+}
+#schoolinfo , #collegeinfo , #future-aim {
+	align-content: justify;
+	height: 40px;
+	background: transparent;
+	width: 300px;
+	border-radius: 50px;
+	background-image:linear-gradient(to right, #2bc400 , #2bc400);
+}
+#schoolinfo h1 , #collegeinfo h1 , #future-aim h1 {
+	position: relative;
+	top: -20px;
+}
+.loginbox {
+	width: 320px;
+	align-content: justify
+	height: 220px;
+	background: rgb(0 , 0 , 0 , .8);
+	border-radius: 10px;
+	box-shadow: 0 15px 25px rgba(0 , 0 , 0 , .5);
+	color: #fff;
+	position: relative;
+	top: 260px;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	box-sizing: border-box;
+	animation-name: fade-in;
+	animation-duration: 1.8s;
+}
+.loginbox {
+	display: none;
+
+}
+.user-image {
+	width:90px;
+	border-radius: 20%;
+	height: 90px;
+	position: relative;
+	top:140px;
+	left: -120px;;
+}
+.inputbox input[type="text"] {
+	position: relative;
+	top: -40px;
+    border:none;
+ 	background: transparent;
+	outline: none;
+	border-bottom: 1px solid #fff;
+	height: 20px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.inputbox label {
+	position: relative;
+	top: -120px;
+   margin: 0 ;
+   padding: 0;
+   transform: translateY(-52px);
+   font-size: 16px;
+   color: #fff;
+   pointer-events: none;
+}
+
+.loginbox input {
+width: 100%;
+margin-bottom: 20px;
+}
+.loginbox input[type="submit"] {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: bold;
+	background:#fb2525;
+	outline: none;
+	border:none;
+	height: 40px;
+	border-radius: 20px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	position: relative;
+	top: -20px;
+}
+
+.loginbox input[type="submit"]:hover {
+	cursor: pointer;
+	background: #f58484;
+}
+.inputbox input:focus ~ label ,
+.inputbox input:valid ~ label 
+ {
+	transform: translateY(-70px);
+	transition: 0.2s;
+	color: #03a9f4;
+	font-size: 14px;
+}
+animation-name: fade-in;
+     animation-duration: 1s;
