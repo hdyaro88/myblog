@@ -2,73 +2,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>index window</title>
+	<title>main window</title>
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="..\css\main - Copy.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600;900&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script type="text/javascript" src="./javascript/main.js"></script>
+  <script type="text/javascript" src="C:\Users\Harshit Kumar Dubey\Documents\web dev\project1\javascript\main - Copy.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Rowdies&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <body id="home">
 	<div class="topnav">
 		<ul>
-  <li><a class="active" href="#home">Home</a>
-  	<!--<div class="submenu">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#blog" class="Blog">Blog</a>
+        <div class="submenu">
   		<ul>
-  			<li>Hello1</li>
-  			<li>Hello2
-            <div class="submenu-2">
-  		<ul>
-  			<li>Hello1</li>
-  			<li>Hello2</li>
-  			<li>Hello3</li>
-  		</ul>
-  	</div>
-  			</li>
-  			<li>Hello3</li>
-  		</ul>
-  	</div> -->
-    
-  </li>
-  <li><a href="#blog" class="Blog">Blog</a>
-    <div class="submenu">
-  		<ul>
-  			<li><a href="#schoolinfo"> School Life </a>
-            <!--<div class="submenu-2">
-  		<ul>
-  			<li>School Life</li>
-  			<li>College Life</li>
-  			<li>What i want to do in future!</li>
-  		</ul>
-  	</div>-->
-  			</li>
+  			<li><a href="#schoolinfo"> School Life </a></li>
   			<li> <a href="#collegeinfo"> College Life </a> </li>
   			<li><a href="#future-aim"> What i want to do in future!</a></li>
   		</ul>
-  	</div>
-  </li>
-  <li><a id ="contact-button" href="#contact-box">Contact</a> 
-   
-  </li>
-  <li><a href="#about">About</a>
-   
-  </li>
-</ul>
-</div>
+  	    </div>
+        </li>
+        <li><a id ="contact-button" href="#contact-box">Contact</a> </li>
+        <li><a href="#about">About</a></li>
+        </ul>
+    </div>
 <div class="intro">
   <p style="text-transform: capitalize; font-size: 20px; color: #ffffff; "> hello there thanks for visiting my blog here you can read about my past , present and my future.&#128540</p>
 </div>
   <div class="info-box">
     <div class="details">
     <b>NAME:</b>
-    <input disabled type="text" value="HARSHIT KUMAR DUBEY" name=""></br>
+    <input id="name" disabled type="text" value="HARSHIT KUMAR DUBEY" name="" size="60"></br>
     <b>AGE:</b>
     <input disabled type="text" value="19 YR" name=""></br>
     <b>NATIONALITY:</b>
@@ -78,7 +53,8 @@
     <b>ADDRESS:</b>
     <input disabled type="text" value="GANGAPUR CITY , RAJASTHAN , INDIA" size="50"></br>
   </div>
-   <img id = "my-image" src="./images/me.jpg">
+   <img id = "my-image" src="E:\llame photos\IMG20200708213620.jpg">
+   <img id = "my-image2" src="E:\llame photos\IMG20200708213224.jpg">
   </div>
   <div class="box">
    <div class="early-life">
@@ -87,14 +63,14 @@
    </div>
    </div>
    <div id="schoolinfo">
-  <h1  style="text-transform: capitalize;">&nbsp;&nbsp;School Life</h1>
+  <h1  style="text-transform: capitalize; color: #ffffff">&nbsp;&nbsp;School Life</h1>
 </div>
 <div class="box">
    <div class="school">
-    <p  style="text-transform: capitalize;"> <font size="+4">&ldquo;</font> </br>
+    <p style="text-transform: capitalize;"> <font size="+4">&ldquo;</font> </br>
       &nbsp; &nbsp; the best moments i have till now in my life is from my school. i used to go to <i>vivekanand sanskar senior secondary school</i>. in my home town <i>gangapur city</i> i made many friends in my school of them just few are with me today and they are my brothers forever now. i changed my school in class 11th , i wanted to go to IIT just like every middle class student. so i went to the best school in town <i>d.s science academy</i> but god has something different planned for me and it didn't go well.so i left it in 2017 and i went to <i>resonance, kota</i>. which is the best coaching in india for IIT preparation. i gave <i> jee mains</i> in 2018 for the first time and i failed in that exam brutally but i decided to give it another chance so i did preparation for another year and gave the exam again in 2019 this time i got selected for <i>jee advanced</i> but i failed to pass the cutoff for <i>jee advanvce</i> that year.and thats how my school life completely ended. so the begining was fun but the ending was heavy .</br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </br> <font size="+4">&rdquo;</font> </p>
     </div>
-      <img id = "school" src="./images/school.jpg">
+      <img id = "school" src="C:\Users\Harshit Kumar Dubey\Pictures\school.jpg">
 </div>
 <div id="collegeinfo"> 
 <h1  style="text-transform: capitalize;">&nbsp;&nbsp;College Life</h1>
@@ -104,13 +80,30 @@
   <p  style="text-transform: capitalize;" > after got selected for jee mains . i got myself admitted in <i>ctae </i> college in <i>
   udaipur city</i> through <i>REAP</i>. my college life is currently going on with its ups and downs and i hope i will get good memories from here which can make me smile whenever i will think of them in future. </p>
 </div>
-  <div class="college-grid">
-    <a href="./ctae pics/ctae1.jpg"><img src="./ctae pics/ctae1.jpg"></a>
-    <a href="./ctae pics/ctae2.jpg"><img src="./ctae pics/ctae2.jpg"></a>
-    <a href="./ctae pics/cate3.jpg"><img src="./ctae pics/cate3.jpg"></a>
-    <a href="./ctae pics/cate4.jpg"><img src="./ctae pics/cate4.jpg"></a>
-  </div>
+  	<div class="slides">
+  		<input type="radio" name="r" id="r1" checked>
+  		<input type="radio" name="r" id="r2">
+  		<input type="radio" name="r" id="r3">
+  		<input type="radio" name="r" id="r4">
+  	</div>
+  	<div class="college-grid">
+  	<div class="slide s1">
+    <a href="C:\Users\Harshit Kumar Dubey\Documents\ctae pics\ctae1.jpg"><img src="C:\Users\Harshit Kumar Dubey\Documents\ctae pics\ctae1.jpg"></a> </div>
+    <div class="slide">
+    <a href="C:\Users\Harshit Kumar Dubey\Documents\ctae pics\ctae2.jpg"><img src="C:\Users\Harshit Kumar Dubey\Documents\ctae pics\ctae2.jpg"></a></div>
+    <div class="slide">
+    <a href="C:\Users\Harshit Kumar Dubey\Documents\ctae pics\cate3.jpg"><img  src="C:\Users\Harshit Kumar Dubey\Documents\ctae pics\cate3.jpg"></a></div>
+    <div class="slide">
+    <a href="C:\Users\Harshit Kumar Dubey\Documents\ctae pics\cate4.jpg"><img src="C:\Users\Harshit Kumar Dubey\Documents\ctae pics\cate4.jpg"></a></div>
 </div>
+<div class="navigation">
+	<label for="r1" class="bar" id="bar1"></label>
+	<label for="r2" class="bar" id="bar2"></label>
+	<label for="r3" class="bar" id="bar3"></label>
+	<label for="r4" class="bar" id="bar4"></label>
+</div>
+</div>
+
  <div id="future-aim">
  <h1  style="text-transform: capitalize;"> future-goal </h1>
 </div>
@@ -122,7 +115,7 @@
 </div>
 <div class="box">
   <div class="loginbox">
-      <img class="user-image" src="./images/mail.jpg"  />
+      <img class="user-image" src="C:\Users\Harshit Kumar Dubey\Documents\web dev\project1\images\mail.jpg"  />
     <form action="connect.php" method="post">
       <div class="inputbox" id="nameinput">
       <input type="text" name="name" required="">
@@ -141,15 +134,15 @@
   </div>
 
 <div class="social-media">
-  <a href="https://www.instagram.com/hdyaro77/" target="_blank"> <img src="./images/insta.jpg"> 
-  <a href="https://www.facebook.com/profile.php?id=100008056099467" target="_blank"> <img src="./images/facebook.jpg"></a>
-  <a href="https://twitter.com/hdyaro77" target="_blank"> <img src="./images/twitter.jpg"></a>
-   <a href="#nameinput"> <img id="gmail" src="./images/gmail.jpg"></a>
+  <a href="https://www.instagram.com/hdyaro77/" target="_blank"> <img src="C:\Users\Harshit Kumar Dubey\Documents\web dev\project1\images\insta.jpg"> 
+  <a href="https://www.facebook.com/profile.php?id=100008056099467" target="_blank"> <img src="C:\Users\Harshit Kumar Dubey\Documents\web dev\project1\images\facebook.jpg"></a>
+  <a href="https://twitter.com/hdyaro77" target="_blank"> <img src="C:\Users\Harshit Kumar Dubey\Documents\web dev\project1\images\twitter.jpg"></a>
+   <a href="#nameinput"> <img id="gmail" src="C:\Users\Harshit Kumar Dubey\Documents\web dev\project1\images\gmail.jpg"></a>
   </div>
 
 </div>
 <div class="box" id="contact-box">
-  <img id="address" src="./ctae pics/home.jpg">
+  <img id="address" src="C:\Users\Harshit Kumar Dubey\Documents\ctae pics\home.jpg">
 <div id="contacts">
    MOB: &nbsp;7014424815</br>
    STREET: &nbsp;NASIYA COLONY.</br>
