@@ -63,12 +63,12 @@ $(document).ready(function() {
     $(".s1").css({"margin-left":"0%" , "transition":"0.4s"});
   });
    $("#bar2").click(function() {
-    $(".s1").css({"margin-left":"-148%" , "transition":"0.4s"});
+    $(".s1").css({"margin-left":"-25%" , "transition":"0.4s"});
   });
      $("#bar3").click(function() {
-    $(".s1").css({"margin-left":"-295%" , "transition":"0.4s"});
+    $(".s1").css({"margin-left":"-50%" , "transition":"0.4s"});
   });
        $("#bar4").click(function() {
-    $(".s1").css({"margin-left":"-443%" , "transition":"0.4s"});
+    $(".s1").css({"margin-left":"-75%" , "transition":"0.4s"});
   });
 });
