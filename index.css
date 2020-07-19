@@ -471,9 +471,12 @@ margin-bottom: 20px;
 	font-size: 14px;
 }
 @media screen and (max-width: 500px) {
-	body {
-		overflow-x: hidden;
-	}
+	html, body {
+        overflow-x: hidden;
+        }
+        body {
+         position: relative
+        }
 	.topnav {
 	position: relative;
 	left: -20px;
