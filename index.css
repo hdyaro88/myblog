@@ -456,9 +456,12 @@ margin-bottom: 20px;
 	font-size: 14px;
 }
 @media screen and (max-width: 500px) {
+	body {
+		overflow-x: hidden;
+	}
 	.topnav {
-		position: relative;
-		left: -20px;
+	position: relative;
+	left: -20px;
 	background: transparent;
 	text-align: center; 
 	width: 120%;
