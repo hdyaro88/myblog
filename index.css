@@ -272,6 +272,16 @@ body{
 	width: 150px;
 	height: 150px;
 }
+.login {
+	text-align: center;
+}
+.login p {
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif; 
+	font-style: capitalize; 
+     color: #03fc24;
+}
+
 
 .social-media {
 	position: relative;
