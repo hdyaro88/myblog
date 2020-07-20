@@ -83,10 +83,12 @@ body{
 	width: 150px;
 	margin-bottom: 18px ;
 	padding-bottom: 2px;
-	border-bottom: 1px dotted white;
 	background :transparent;
 	border-radius: 0;
 	text-align: left;
+}
+.topnav ul li:hover .submenu ul li a{
+	border-bottom: 1px dotted white;
 }
 .submenu ul li:hover {
 	font-family: 'Ranchers', cursive;
@@ -96,11 +98,12 @@ body{
 	cursor: pointer;
 	color: #ffffff;
 }
-.topnav ul li:hover .submenu ul li:last-child {
+.topnav ul li:hover .submenu ul li:last-child a {
 	margin-bottom: 0px;
 	border-bottom: none;
 }
-.submenu-2 {
+
+ /*.submenu-2 {
 	display: none;
 	font-size:16px;
 }
@@ -112,7 +115,7 @@ body{
 	margin-top: -10px;
 	margin-left: 140px;
 	background: rgb(0 , 100 , 0);
-}
+}*/
 .slides {
 	display: none;
 }
@@ -181,6 +184,8 @@ body{
 	animation-duration: 2s;
 }
 .details {
+	color: #ffffff;
+	overflow-wrap: break-word;
 	position: absolute;
   top: 70px;
   left: 100px;
@@ -189,17 +194,6 @@ body{
 	color: #ffffff;
 	font-size:20px;
 }
-.details input {
-	position: relative;
-	left: -30px;
-	background: transparent;
-	font-size: 16px;
-	border: none;
-	outline: none;
-	color: #ffffff;
-	margin:20px;
-}
-
 @keyframes fade-in {
 	0% {
 		opacity: 0;
@@ -472,46 +466,52 @@ margin-bottom: 20px;
 }
 @media screen and (max-width: 500px) {
 	html, body {
-        overflow-x: hidden;
-        }
-        body {
-         position: relative
-        }
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
 	.topnav {
 	position: relative;
-	left: -20px;
 	background: transparent;
 	text-align: center; 
-	width: 120%;
+	width: 100%;
 	box-sizing: border-box;
 	box-shadow: 0 15px 25px rgba(0 , 0 , 0 , .5);
 	background: rgba(0 , 0 , 0 , .4);
 	outline: none;
 	border: none;
 }
-.topnav ul {
+.menu {
 	position: relative;
-   display: inline-flex;
-   list-style: none;
-   color: white; 
-   transform: translateX(-30px);
-}
-.topnav ul li {
-   width:auto;
-   margin: 15px;
-   
-}
-.topnav ul li a {
-	position: relative;
-	align-items: center;
-	align-content: center;
+	width: 100%;
 	text-align: center;
+}
+.menu ul {
+	width: 100%;
+	align-self: center;
+	align-content: center;
+	align-items: center;
+	margin: 0px;
+	padding: 0px;
+}
+.menu ul li {
+	width: 25%;
+	text-align: center;
+	margin:0% 1%;
+}
+.menu ul li:nth-child(3){
+	transform: translateX(-10%);
+}
+
+ .menu ul li a {
+	position: relative;
 	font-size: 15px;
 	text-decoration: none;
 	color: #ffffff;
 }
 
-.topnav ul li:first-child, .topnav ul li:hover{
+.menu ul li:first-child, .menu ul li:hover{
 	cursor: pointer;
 	background-color: #2bab0d;
 	border-radius: 4px;
@@ -519,10 +519,10 @@ margin-bottom: 20px;
 .submenu {
 	display: none;
 	border-radius: 6px;
-	width: 200px;
+	width: 50%;
 }
 
-.topnav ul li:hover .submenu {
+.menu ul li:hover .submenu {
 	display: block;
 	position: absolute;
 	background: rgb(0 , 100 ,0);
@@ -530,40 +530,41 @@ margin-bottom: 20px;
 	margin-left: -15px;
 	z-index: 1;
 }
-.topnav ul li:hover .submenu ul{
-	display: block;
-	margin: 0px;
-}
-.topnav ul li:hover .submenu ul li:nth-child(1) {
+.menu ul li:hover .submenu ul li:nth-child(1) {
    animation-name: list-slide;
    animation-duration: 0.33s;
 }
-.topnav ul li:hover .submenu ul li:nth-child(2) {
+.menu ul li:hover .submenu ul li:nth-child(2) {
    animation-name: list-slide;
    animation-delay: 0.33s;
    animation-duration: 0.33s;
 }
-.topnav ul li:hover .submenu ul li:nth-child(3) {
+.menu ul li:hover .submenu ul li:nth-child(3) {
    animation-name: list-slide;
    animation-delay: 0.66s;
    animation-duration: 0.33s;
 }
-.topnav ul li:hover .submenu ul li {
+.sub-menu {
 	width: 100%;
+	height: 100%;
+}
+.sub-menu ul {
+	width: 80%;
+	height: 80%;
+}
+.sub-menu ul li {
+	align-content: center;
+	align-self: center;
+	text-align: center;
+	width: 50%;
 	font-size: 15px;
 	margin-bottom: 18px ;
 	padding-bottom: 2px;
-	border-bottom: 1px dotted white;
 	background :transparent;
 	border-radius: 0;
-	text-align: left;
 }
 
 .submenu ul li {
-	position: relative;
-	left: 30px;
-	font-size: 12px;
-	margin: 5px;
 	cursor: pointer;
 	color: #ffffff;
 }
@@ -575,10 +576,11 @@ margin-bottom: 20px;
 	cursor: pointer;
 	color: #ffffff;
 }
-.topnav ul li:hover .submenu ul li:last-child {
+.sub-menu ul li a:last-child {
 	margin-top: -10px;
 	margin-bottom: 0px;
-	border-bottom: none;
+	transform: translateX(20px;);
+	border: none;
 }
 .submenu-2 {
 	display: none;
@@ -634,7 +636,7 @@ margin-bottom: 20px;
 	animation-delay: 0.1s;
 	position: relative;
 	width: 90%;
-	height: 600px;
+	height: 620px;
 	border: 1px solid black;
 	border-radius: 20px;
 	box-sizing: border-box;
@@ -660,10 +662,15 @@ margin-bottom: 20px;
 	animation-duration: 2s;
 }
 .details {
-	position: absolute;
+	color: #ffffff;
+	font-size: 13px;
+	display: block;
+	overflow-wrap: break-word;
+    min-width:1px;
      top: 350px;
     left: 0px;
-    width: 300%;
+    width: 100%;
+    height: auto;
 }
 .details b {
 	color: #ffffff;
@@ -723,15 +730,17 @@ margin-bottom: 20px;
     height: 100%;
 }
 .navigation {
+	align-content: center;
+	text-align: center;
 	position: relative;
 	top: -60px;
-	left: 70px;
+	left: 0%;
 }
 .bar {
 	border-radius: 5px;
 	margin: 6px;
 	cursor: pointer;
-	width: 30px;
+	width: 15%;
 	border: 2px solid white;
 	transition: 0.4s;
 }
@@ -777,42 +786,42 @@ margin-bottom: 20px;
 
 
 #contacts {
+	width: 75%;
 	position: relative;
 	left: calc(50% - 70px);
 	color: #ffffff;
-	font-size: 18px;
+	font-size: 14px;
     font-family: 'Grenze Gotisch', cursive;
     text-align: justify;
-    padding: 20px;
 }
 #address {
 	border-radius: 50%;
 	display: block;
 	position: absolute;
-	top: 30px;
+	top: 25%;
 	left: 20px;
-	width: 100px;
-	height: 100px;
+	width: 25%;
+	height: 43.63%;
 }
 
 .social-media {
-	position: relative;
-	left: 0px;
+	left: -10px;
 	margin: 2px;
-	width: 200px;
-	display: flex;
-	flex-direction: row;
+	width: 100%;
+	height: 100%;
 	
+}
+.social-media a {
+	width: 25%;
+	margin:0% 1%;
 }
 
 .social-media img { 
-	width: 50px;
-	height: 50px;
-	margin: 5px;
+	width: 40px;
+	height: 40px;
+	margin: 0px;
 	padding: 0px;
-	position: relative;
-    border-radius: 40% 40% 40% 40%;
- 
+    border-radius: 30% 30% 30% 30%;
 }
 
 .social-media img:hover {
@@ -820,7 +829,7 @@ margin-bottom: 20px;
 	transition-duration: 0.1s; 
 	animation-delay: 0.2s;
 	animation-name: rotate;
-	animation-duration: 0.6s;
+	animation-duration: 2s;
 }
 @keyframes rotate {
 	0% {
@@ -950,7 +959,7 @@ margin-bottom: 20px;
 	left: 25%;
 }
 .loginbox {
-	width: 320px;
+	width: 100%;
 	align-content: justify
 	height: 220px;
 	background: rgb(0 , 0 , 0 , .8);
