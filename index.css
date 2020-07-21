@@ -65,8 +65,15 @@ body {
 	color : #42f5b6;
 }
 .attension {
-	font-size: 22px;
+	font-size: 20px;
 	letter-spacing: 0px;
 	text-align: justify;
 	font-family: 'Rowdies', cursive;
+}
+.navbar-brand {
+font-family: 'Fredoka One', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Red Rose', cursive;
+font-family: 'Rowdies', cursive;
 }
