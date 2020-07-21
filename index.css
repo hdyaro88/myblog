@@ -62,3 +62,9 @@ body {
 .login p {
 	color : #42f5b6;
 }
+.attension {
+	font-size: 22px;
+	letter-spacing: 0px;
+	text-align: justify;
+	font-family: 'Rowdies', cursive;
+}
