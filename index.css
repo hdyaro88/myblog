@@ -57,6 +57,19 @@ body {
 	width: 60px;
 	height: 60px;
 	border-radius: 30% 30% 30% 30%;
+	animation-iteration-count: infinite;
+}
+.social-media a:nth-child(1) img {
+	animation-delay: 0s;
+}
+.social-media a:nth-child(2) img {
+	animation-delay: 0.1s;
+}
+.social-media a:nth-child(3) img {
+	animation-delay: 0.2s;
+}
+.social-media a:nth-child(4) img {
+	animation-delay: 0.3s;
 }
 .loginbox {
 	display: none;
