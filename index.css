@@ -71,6 +71,9 @@ body {
 	font-family: 'Rowdies', cursive;
 }
 .navbar-brand {
+background: #d14600;
+padding: 10px;
+border-radius: 10px;
 font-family: 'Fredoka One', cursive;
 font-family: 'Lato', sans-serif;
 font-family: 'Montserrat', sans-serif;
