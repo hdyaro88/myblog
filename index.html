@@ -1,123 +1,146 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Harshit's Blog</title>
-   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600;900&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script type="text/javascript" src="./javascript/main2.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Rowdies&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-<body id="home">
-	<div class="topnav">
-    <div class="menu">
-		<ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#blog" class="Blog">Blog</a>
-        <div class="submenu">
-          <div class="sub-menu">
-  		<ul>
-  			<li><a href="#schoolinfo"> School Life </a></li>
-  			<li> <a href="#collegeinfo"> College Life </a> </li>
-  			<li><a href="#future-aim"> Future Life</a></li>
-  		</ul>
-    </div>
-  	    </div>
-        </li>
-        <li><a id ="contact-button" href="#contact-box">Contact</a> </li>
-        <li><a href="#about">About</a></li>
-        </ul>
-      </div>
-    </div>
-<div class="intro">
-  <p style="text-transform: capitalize; font-size: 20px; color: #ffffff; "> hello there thanks for visiting my blog here you can read about my past , present and my future.&#128540</p>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">Harshit's Blog</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Blog
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#school-life">School Life</a>
+          <a class="dropdown-item" href="#college-life">College Life</a>
+          <a class="dropdown-item" href="#future-aim">Future Goal</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#bio">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <div class="conatiner row" style="margin-top: 20px;">
+  	<div class="col-sm-12 text-center">
+  <p class="font-weight-bold text-white" style="font-family: 'Red Rose', cursive; text-transform: capitalize; font-size: 20px; letter-spacing: 0px; text-transform: justify;"> hello there thanks for visiting my blog here you can read about my past , present and my future.&#128540</p>
 </div>
-  <div class="info-box" id="about">
-    <div class="details">
+</div>
+    <div id="bio" class="box row mx-auto" style="border: 3px solid green">
+    	<div class="col-sm-6 text-center">
+    		<div class="container d-flex h-100">
+    			<div class="justify-content-center align-self-center">
+   <img class="rounded img-thumbnail img-responsive shadow-lg bg-white mx-auto" style="width:40%; height:100%;" id = "my-image2" src="../images/me2.jpg">
+</div>
+</div>
+</div>
+    	<div class="col-sm-6 mx-auto">
+    		<div class="container d-flex h-100">
+    			<div class="justify-content-center align-self-center">
+    				<p class="font-weight-bold text-white">
     <b>NAME:</b> &nbsp; HARSHIT KUMAR DUBEY<br><br>
     <b>AGE: &nbsp;19</b><br><br>
     <b>NATIONALITY:</b> &nbsp;INDIAN<br><br>
     <b>OCCUPATION:</b> &nbsp; STUDENT <br><br>
     <b>ADDRESS:</b> &nbsp;GANGAPUR CITY , RAJASTHAN , INDIA
-  </div>
-   <img id = "my-image" src="./images/me.jpg">
-   <img id = "my-image2" src="./images/me2.jpg">
-  </div>
-  <div class="box">
-   <div class="early-life">
-     <p>i was born on 9th of november in 2000 in gangapur city. my first home was at mahukalan chak chabba village. i 
-     happily lived and spent almost 10 years of my childhood there , then my family moved to live in the cityside because of education purpose considering me and my two elder brothers. </p>
-   </div>
-   </div>
-   <div id="schoolinfo">
-  <h1  style="text-transform: capitalize; color: #ffffff">&nbsp;&nbsp;School Life</h1>
+    </p>
 </div>
-<div class="box">
-   <div class="school">
-    <p style="text-transform: capitalize;"> <font size="+4">&ldquo;</font> </br>
-      &nbsp; &nbsp; the best moments i have till now in my life is from my school. i used to go to <i>vivekanand sanskar senior secondary school</i>. in my home town <i>gangapur city</i> i made many friends in my school of them just few are with me today and they are my brothers forever now. i changed my school in class 11th , i wanted to go to IIT just like every middle class student. so i went to the best school in town <i>d.s science academy</i> but god has something different planned for me and it didn't go well.so i left it in 2017 and i went to <i>resonance, kota</i>. which is the best coaching in india for IIT preparation. i gave <i> jee mains</i> in 2018 for the first time and i failed in that exam brutally but i decided to give it another chance so i did preparation for another year and gave the exam again in 2019 this time i got selected for <i>jee advanced</i> but i failed to pass the cutoff for <i>jee advanvce</i> that year.and thats how my school life completely ended. so the begining was fun but the ending was heavy .</br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </br> <font size="+4">&rdquo;</font> </p>
     </div>
-      <img id = "school" src="./images/school.jpg">
-</div>
-<div id="collegeinfo"> 
-<h1  style="text-transform: capitalize;">&nbsp;&nbsp;College Life</h1>
-</div>
-<div class="box">
-<div class="college">
-  <p  style="text-transform: capitalize;" > after got selected for jee mains . i got myself admitted in <i>ctae </i> college in <i>
-  udaipur city</i> through <i>REAP</i>. my college life is currently going on with its ups and downs and i hope i will get good memories from here which can make me smile whenever i will think of them in future. </p>
-</div>
-  	<div class="slides">
-  		<input type="radio" name="r" id="r1">
-  		<input type="radio" name="r" id="r2" checked>
-  		<input type="radio" name="r" id="r3">
-  		<input type="radio" name="r" id="r4">
+    </div>
+  </div>
+  <div class="conatiner mx-auto align-self-center">
+  <h1 id="future-aim" class="text-white display-5 text-center"> School Life</h1>
+  </div>
+  <div  class="box container row center mx-auto" style="border:1px solid green">
+  	<div class="col-sm-8">
+  		<p class="text-capitalize text-white" text-align: justify;">the best moments i have till now in my life is from my school. i used to go to <i>vivekanand sanskar senior secondary school</i>. in my home town <i>gangapur city</i> i made many friends in my school of them just few are with me today and they are my brothers forever now. i changed my school in class 11th , i wanted to go to IIT just like every middle class student. so i went to the best school in town <i>d.s science academy</i> but god has something different planned for me and it didn't go well.so i left it in 2017 and i went to <i>resonance, kota</i>. which is the best coaching in india for IIT preparation. i gave <i> jee mains</i> in 2018 for the first time and i failed in that exam brutally but i decided to give it another chance so i did preparation for another year and gave the exam again in 2019 this time i got selected for <i>jee advanced</i> but i failed to pass the cutoff for <i>jee advanvce</i> that year.and thats how my school life completely ended. so the begining was fun but the ending was heavy </p>
   	</div>
-  	<div class="college-grid">
-  	<div class="slide s1">
-    <a href="./ctae pics/ctae1.jpg"><img src="./ctae pics/ctae1.jpg"></a> </div>
-    <div class="slide">
-    <a href="./ctae pics/ctae2.jpg"><img src="./ctae pics/ctae2.jpg"></a></div>
-    <div class="slide">
-    <a href="./ctae pics/cate3.jpg"><img  src="./ctae pics/cate3.jpg"></a></div>
-    <div class="slide">
-    <a href="./ctae pics/cate4.jpg"><img src="./ctae pics/cate4.jpg"></a></div>
+  	<div class="col-sm-4 text-center align-self-center">
+  		<img class="rounded" src="../images/school.jpg">
+  	</div>
+  </div>
+   <div class="conatiner mx-auto">
+  <h1 id="future-aim" class="text-white display-5 text-center"> College Life </h1>
+  </div>
+  <div class="box container row mx-auto" style="border:1px solid green;>
+  	<div class="col-sm-12">
+  		<p class="text-capitalize text-white" style="text-transform: capitalize; text-align: justify;" > after got selected for jee mains . i got myself admitted in <i>ctae </i> college in <i>
+  udaipur city</i> through <i>REAP</i>. my college life is currently going on with its ups and downs and i hope i will get good memories from here which can make me smile whenever i will think of them in future. </p>
+  <div id="carouselExampleControls" class="carousel slide mx-auto" data-ride="carousel" data-interval="6000">
+  	 <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    	<figure class="figure">
+      <img class="figure-img d-block w-100" src="../ctae pics/ctae1.jpeg" alt="First slide"> </figure>
+    </div>
+    <div class="carousel-item">
+    	<figure class="figure">
+      <img class="figure-img d-block w-100" src="../ctae pics/ctae2.jpg" alt="Second slide"></figure>
+    </div>
+    <div class="carousel-item">
+    	<figure class="figure">
+      <img class="figure-img d-block w-100" src="../ctae pics/ctae3.jpg" alt="Third slide"></figure>
+    </div>
+    <div class="carousel-item">
+    	<figure class="figure">
+      <img class="figure-img d-block w-100" src="../ctae pics/ctae4.jpg" alt="fourth slide"></figure>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-<div class="navigation">
-	<label for="r1" class="bar" id="bar1"></label>
-	<label for="r2" class="bar" id="bar2"></label>
-	<label for="r3" class="bar" id="bar3"></label>
-	<label for="r4" class="bar" id="bar4"></label>
-</div>
-</div>
-
- <div id="future-aim">
- <h1  style="text-transform: capitalize;"> future-goal </h1>
-</div>
-<div class="box">
-  <div class="future">
-    <p style="text-transform: capitalize;"> i always wanted to be software developer so i grew my interest in computers since i was 7th standard but i didn't know anything about coding because our school curriculum did not have it. i learned many basic things about both hardwares and softwares with the help of internet.<br>
+  	</div>
+  </div>
+  <div class="conatiner mx-auto">
+  <h1 id="future-aim" class="text-white display-5 text-center"> Future-Goal </h1>
+  </div>
+  <div  class="box container row mx-auto" style="border:1px solid green;" id="future-aim">
+<div class="col-sm-12">
+    <p class="text-capitalize text-white" style="text-transform: capitalize; text-align: justify;"> i always wanted to be software developer so i grew my interest in computers since i was 7th standard but i didn't know anything about coding because our school curriculum did not have it. i learned many basic things about both hardwares and softwares with the help of internet.<br>
       now its been almost one year since i have been coding on different websites available on the internet but mostly i do coding on the <a href="http://www.codeforces.com"><b>codeforces.</b></a>i have a pretty good grasp on c and c++ programming language and also i am learnig web development. i have always dreamed about working in a big company like google and facebook in foregin because i also want to travel the world.&#128540</p> 
   </div>
 </div>
-<div class="box">
-	<div class="login">
-  <p>TO POST ME A MESSEGE CLICK ON "GOOGLE+" BUTTON BELOW</p></div>
-  <div class="loginbox">
-      <img class="user-image" src="./images/mail.jpg"  />
+
+
+
+
+<div class="box conatiner-fluid mx-auto">
+  <div class="login">
+  <p class="text-capitalize text-center" >! &nbsp; &nbsp;TO POST ME A MESSEGE CLICK ON "GOOGLE+" BUTTON BELOW&nbsp;&nbsp;!</p></div>
+  <div class="loginbox container mx-auto">
+     <!-- <img class="user-image" src="./images/mail.jpg"  />
     <form action="https://formspree.io/mnqglapk" method="POST">
       <div class="inputbox" id="nameinput">
       <input type="text" name="name" required="">
@@ -132,26 +155,68 @@
       <label>Messege</label>
     </div>
       <input id="submit" type="submit" name="" placeholder="submit">
-    </form>
+    </form> -->
+    <form action="https://formspree.io/mnqglapk" method="POST">
+    <div class="form-group">
+    	<label for="name" class="text-white" >Reader Name</label>
+    	<input type="text" class="form-control" name="Name" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+    	<label for="email" class="text-white" >Your Email</label>
+    	<input type="email" class="form-control" name="Email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+    <label for="messegeArea" class="text-white">Messege</label>
+    <textarea class="form-control" id="messegeArea" name="Messege" rows="3"></textarea>
   </div>
-
-<div class="social-media">
-  <a href="https://www.instagram.com/hdyaro77/" target="_blank"> <img src="./images/insta.jpg"> </a>
-  <a href="https://www.facebook.com/profile.php?id=100008056099467" target="_blank"> <img src="./images/facebook.jpg"></a>
-  <a href="https://twitter.com/hdyaro77" target="_blank"> <img src="./images/twitter.jpg"></a>
-   <a href="#nameinput"> <img id="gmail" src="./images/gmail.jpg"></a>
-  </div>
-
+  <button type="submit" class="text-center btn btn-primary">Submit</button>
+  </form>
 </div>
-<div class="box" id="contact-box">
-  <img id="address" src="./ctae pics/home.jpg">
-<div id="contacts">
-   MOB: &nbsp;7014424815</br>
-   STREET: &nbsp;NASIYA COLONY.</br>
-   CITY : &nbsp;GANAGPUR CITY</br>
-   STATE :&nbsp; RAJASTHAN</br>
-   PINCODE: &nbsp;322201</br>
+
+<div class="social-media conatiner text-center mx-auto d-flex justify-content-xl-between align-self-center">
+  <a href="https://www.instagram.com/hdyaro77/" target="_blank"> <img class="img-fluid mx-auto  img-responsive" src="../images/insta.jpg"> </a>
+  <a href="https://www.facebook.com/profile.php?id=100008056099467" target="_blank"> <img class="img-fluid mx-auto  img-responsive" src="../images/facebook.jpg"></a>
+  <a href="https://twitter.com/hdyaro77" target="_blank"> <img class="img-fluid mx-auto  img-responsive" src="../images/twitter.jpg"></a>
+   <a href="#nameinput"> <img class="img-fluid mx-auto img-responsive" id="gmail" src="../images/gmail.jpg"></a>
   </div>
 </div>
+
+
+
+
+
+<h1 id="Contact" class="text-white display-5 text-center"> Contact-Me </h1>
+<!--<div class="box container row mx-auto" style="border: 1px solid green">
+    	<div class="col-sm-6 col-xs-12 text-center">
+    		<div class="container d-flex h-100">
+    			<div class="justify-content-center align-self-center float-left">
+   <img class="rounded-circle img-responsive " style="width:40%; height:100%;" id = "my-image2" src="../ctae pics/home.jpg"> </div>
+</div>
+</div>
+    	<div class="col-sm-6 col-xs-12 mx-auto">
+    		<div class="container d-flex h-100">
+    			<div class="justify-content-center align-self-center mx-auto float-right">
+    				<p class="text-white text-sm-left text-xs-right Contact">
+           MOB: &nbsp;7014424815</br>
+           STREET: &nbsp;NASIYA COLONY.</br>
+           CITY : &nbsp;GANAGPUR CITY</br>
+           STATE :&nbsp; RAJASTHAN</br>
+           PINCODE: &nbsp;322201
+                     </p>
+            </div>
+            </div>
+            </div>
+            </div> -->
+            <div class="box container mx-auto" style="border: 1px solid green">
+            	<div class="text-center">
+            	<i class=" fa fa-home" aria-hidden="true" style="font-size: 30px; color: white"></i>
+            	</div>
+            	<p class="text-center text-white Contact">
+           EMAIL: &nbsp; HDYARO88@GMAIL.COM</br>
+           STATE :&nbsp; RAJASTHAN</br>
+           COUNTRY: &nbsp; INDIA </br>
+           PINCODE: &nbsp;322201
+       </p>
+   </div>             
 </body>
 </html>
