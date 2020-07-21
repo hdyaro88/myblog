@@ -4,13 +4,8 @@ html {
 body {
 	background:url(https://images.wallpaperscraft.com/image/board_black_line_texture_background_wood_55220_1920x1080.jpg);
 }
-.navbar-nav > li:hover{
-  transition: 0.4s all;
-  background: #cc4a04;
-}
-.navbar-nav > li {
-	border-radius: 10px;
-}
+
+
 .container {
 	margin-bottom: 40px;
 }
@@ -86,10 +81,16 @@ body {
 .navbar-brand {
 background: #d14600;
 padding: 10px;
-border-radius: 10px;
+font-size: 18px;
 font-family: 'Fredoka One', cursive;
 font-family: 'Lato', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Red Rose', cursive;
 font-family: 'Rowdies', cursive;
+}
+.dropdown-menu {
+	background: #ed5807;
+}
+.brand {
+	height: 40px;
 }
