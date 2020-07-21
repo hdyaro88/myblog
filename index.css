@@ -38,7 +38,9 @@ body {
 	font-size: 22px;
 	letter-spacing: 0px;
 	text-align: justify;
-	font-family: 'Grenze Gotisch', cursive;
+	font-family: 'Lato', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Rowdies', cursive;
 }
 .Contact {
 	font-family: 'Poppins', sans-serif;
