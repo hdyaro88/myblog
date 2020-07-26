@@ -85,10 +85,9 @@ body {
 .loginbox {
 	display: none;
 }
-.login p {
-	color : #42f5b6;
-}
 .attension {
+	text-transform: capitalize;
+	color: #90fc03;
 	font-size: 20px;
 	letter-spacing: 0px;
 	text-align: justify;
